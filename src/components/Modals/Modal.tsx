@@ -1,6 +1,5 @@
 "use client";
 
-import { on } from "events";
 import React, { useCallback, useEffect, useState } from "react";
 import { AiOutlineClose } from "react-icons/ai";
 import Button from "../Utils/Button";

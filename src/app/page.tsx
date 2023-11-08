@@ -2,7 +2,7 @@ import EmptyState from "@/components/Utils/EmptyState";
 import { getListings } from "./actions/getListings";
 import ListingCart from "@/components/Utils/ListingCart";
 import getCurrentUser from "./actions/getCurrent";
-import { Listing } from "@prisma/client";
+//import { Listing } from "@prisma/client";
 
 export default async function HomePage() {
   const listings = await getListings();
@@ -26,7 +26,7 @@ export default async function HomePage() {
           gap-8
           "
       >
-        {listings?.map((listing: Listing) => (
+        {listings?.map((listing: any) => (
           <ListingCart
             key={listing.id}
             data={listing}
